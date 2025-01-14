@@ -2,12 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Lushlume — Каталог</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-lang-key="catalogTitle">Каталог</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
   <header class="header">
     <div class="logo" data-lang-key="brandName">Lushlume</div>
     <nav class="nav">
@@ -27,17 +25,37 @@
 
   <main>
     <h1 data-lang-key="catalogTitle">Каталог товаров</h1>
-    <!-- Список товаров будет формироваться JavaScript’ом из products.json -->
-    <section class="product-list" id="product-list"></section>
+
+    <!-- Блок фильтров -->
+    <section class="filters">
+      <!-- Фильтр по категории -->
+      <select id="category-filter">
+        <option value="all" selected>Все категории</option>
+        <option value="face">Лицо</option>
+        <option value="hair">Волосы</option>
+        <option value="body">Тело</option>
+      </select>
+
+      <!-- Фильтр по цене (пример) -->
+      <input type="number" id="min-price" placeholder="Мин. цена" />
+      <input type="number" id="max-price" placeholder="Макс. цена" />
+
+      <!-- Поиск по названию -->
+      <input type="text" id="search-input" placeholder="Поиск..." />
+
+      <!-- Кнопка сброса -->
+      <button id="reset-filters">Сбросить</button>
+    </section>
+
+    <section class="product-list" id="product-list">
+      <!-- Товары будут здесь -->
+    </section>
   </main>
 
   <footer class="footer">
-    <p data-lang-key="footerText">
-      © 2025 Lushlume. Все права защищены.
-    </p>
+    <p data-lang-key="footerText">© 2025 Lushlume. Все права защищены.</p>
   </footer>
 
-  <!-- Скрипты -->
   <script src="js/main.js"></script>
   <script src="js/catalog.js"></script>
 </body>
