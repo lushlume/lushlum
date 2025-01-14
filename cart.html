@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lushlume — Корзина</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo" data-lang-key="brandName">Lushlume</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-lang-key="homeLink">Главная</a></li>
+        <li><a href="catalog.html" data-lang-key="catalogLink">Каталог</a></li>
+        <li><a href="cart.html" data-lang-key="cartLink">Корзина</a></li>
+        <li><a href="about.html" data-lang-key="aboutLink">О нас</a></li>
+        <li><a href="contacts.html" data-lang-key="contactsLink">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switcher">
+      <button id="lang-ru">RU</button>
+      <button id="lang-ua">UA</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h1 data-lang-key="cartTitle">Корзина</h1>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <span data-lang-key="cartTotal">Итого:</span> 
+        <span id="total-price">0</span> грн
+      </div>
+      <button id="checkout-btn" data-lang-key="checkoutBtn">Оформить заказ</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-lang-key="footerText">
+      © 2025 Lushlume. Все права защищены.
+    </p>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

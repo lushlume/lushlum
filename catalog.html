@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lushlume — Каталог</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo" data-lang-key="brandName">Lushlume</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-lang-key="homeLink">Главная</a></li>
+        <li><a href="catalog.html" data-lang-key="catalogLink">Каталог</a></li>
+        <li><a href="cart.html" data-lang-key="cartLink">Корзина</a></li>
+        <li><a href="about.html" data-lang-key="aboutLink">О нас</a></li>
+        <li><a href="contacts.html" data-lang-key="contactsLink">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switcher">
+      <button id="lang-ru">RU</button>
+      <button id="lang-ua">UA</button>
+    </div>
+  </header>
+
+  <main>
+    <h1 data-lang-key="catalogTitle">Каталог товаров</h1>
+    <!-- Список товаров будет формироваться JavaScript’ом из products.json -->
+    <section class="product-list" id="product-list"></section>
+  </main>
+
+  <footer class="footer">
+    <p data-lang-key="footerText">
+      © 2025 Lushlume. Все права защищены.
+    </p>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
